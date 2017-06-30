@@ -1,10 +1,6 @@
 from grid import Grid
 from time import sleep
 
-def clear_screen():
-    import os
-    os.system('cls' if os.name == 'nt' else 'clear')
-
 def play (grid, max_gen):
     generation = 0
     changed = True
