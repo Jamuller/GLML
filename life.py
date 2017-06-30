@@ -14,8 +14,12 @@ def play (grid, max_gen):
         changed = grid.evolve()
         print('Generation = ' + str(generation))
         print(grid)
-        sleep(0.01)
+        # sleep(0.01)
         generation += 1
+    return generation
+
+def run_life(filename, max_gen):
+    return play(Grid(filename), max_gen)
 
 def main ():
     filename = input('Enter the name of the initialization file: ')
